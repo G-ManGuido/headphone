@@ -18,11 +18,11 @@ a{
 
 header{
 display: grid;
-grid-template-columns: 60% 40%;
+grid-template-columns: 63% 37%;
 padding: 1% 5%;
 top: 0;
 position: fixed;
-font-size: 0.8rem;
+font-size: 0.7rem;
 width: 100%;
 align-items: center;
 }
@@ -168,10 +168,11 @@ main img{
 
 /* THE LOUNGER  */
 .lounger{
-  width:90%;
+  width:100%;
   grid-template-columns: 56% 44%;
   margin: 0;
-  
+  gap: unset;
+ 
 }
 .lounger img {
   height: 100vh;
@@ -179,35 +180,40 @@ main img{
 } 
 .lounger h2 {
   margin-bottom: 3.5rem;
+  padding: 0 3rem;
 }
 .lounger p{
   padding-right: 12%;
   font-size: 1.1rem;
   line-height: 1.7rem;
+  padding: 1rem 3rem;
 }
-
+video{
+  width: 70%;
+  text-align: center;
+}
 .shop{
   align-items: center;
 }
 .shop img{
-  height: 50vh;
+  height: 60vh;
   margin-top: 2rem;
 }
 .shop h2{
   font-size: 1.8rem;
   font-weight: 100;
   color: #ebccc2;
-  margin: 3rem 0 1rem 0;
+  margin: 2rem 0 1rem 0;
   text-align: center;
 }
 .shop p{
   text-align: center;
-  padding: 0;
+  padding: 0.3rem 0 0.5rem 0;
 }
 .shop div{
-  display: inline;
+  width: fit-content;
   font-size: 0.8rem;
-  text-align: center;
+  margin: 0.3rem auto 0 auto;
   background:  #ebccc2;
   color: #2E2E2E;
   padding: 0.8rem 1.5rem;
@@ -215,11 +221,13 @@ main img{
 }
 
 /* ::::::::::::: Formular :::::::::::::  */
+
 label{
   color:rgb(115, 115, 115);
-}
-label:nth-of-type(1), label:nth-of-type(2), label:nth-of-type(3), label:nth-of-type(4){
   display: block;
+}
+div label{
+  display: inline;
 }
 input, select {
   border-radius:6px; 
@@ -233,7 +241,7 @@ input, select {
   width: 300px;
   display: block;
 }
-input:nth-of-type(3), input:nth-of-type(4), input:nth-of-type(5){
+input[type="checkbox"] {
   width: 1rem;
   display: inline;
   margin: 1rem 0;
@@ -249,14 +257,13 @@ textarea{
   width: 300px;
   display: block;
 }
-.robo{
-  border-radius:6px; 
-  border:2px solid rgb(115, 115, 115);
-  outline: none; 
-  padding: 4px 8px;
-  width: 300px;
-  color:  #ebccc2;
-}
+
 .fa-robot{
   color:  #ebccc2;
 }
+input[type="submit"] {
+  background:  #ebccc2;
+  color: #2E2E2E;
+  display: inline;
+  margin: 1.5rem 0;
+} 

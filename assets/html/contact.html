@@ -65,9 +65,9 @@
             </article>
             <article>
                 <h2>SIGN UP</h2>
-                <form>
-                    <label for="fname">Name:</label>
-                    <input type="text" id="yourname" name="yourname" required>
+                <form onsubmit="return false">
+                    <label for="deinname">Name:</label>
+                    <input type="text" id="deinname" name="deinname" required>
                     <label for="email">Email:</label>
                     <input type="email" id="email" name="email" required>
 
@@ -322,17 +322,15 @@
                     </select>
                     <label for="comment">Comment:</label>
                     <textarea id="comment" name="comment" rows="4" cols="30"></textarea>
-
-
-
-                    <input type="checkbox" id="mailinglist" name="mailinglist" value="1" checked>
-                    <label for="mailinglist">Sign up for the mailing list to get all of the latest news and
-                        updates!</label><br>
-                    <div class="robo">
+                    <div>
+                        <input type="checkbox" id="mailinglist" name="mailinglist" value="1" checked>
+                        <label for="mailinglist">Sign up for the mailing list</label>
+                    </div>
+                    <div>
                         <input type="checkbox" id="robot" name="robot" value="1">
                         <label for="robot">I'm a robot <i class="fas fa-robot"></i></label>
                     </div>
-                    <input type="submit">
+                    <input type="submit" id="push" value="Join Us" onclick="letsrock()">
                 </form>
 
             </article>
@@ -340,8 +338,7 @@
     </main>
 
 
-
-
+    <script src="../js/main.js"></script>
     <script src="https://kit.fontawesome.com/8c93758a75.js" crossorigin="anonymous"></script>
 </body>
 
