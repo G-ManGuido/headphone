@@ -53,7 +53,7 @@ header a:hover{
   color: #fff;
   transition: all .5s linear;
 }
-/* --- Sidebar -- */
+/* ::::::::::::: Sidebar ::::::::::::: */
 .sidebar {
   position: absolute;
   top:25%;
@@ -153,7 +153,7 @@ main img{
   line-height: 1.5rem;
 }
 
-/* THE LOUNGER  */
+/* ::::::::::::: THE LOUNGER :::::::::::::  */
 .lounger{
   width:100%;
   grid-template-columns: 56% 44%;
@@ -174,25 +174,26 @@ main img{
   line-height: 1.7rem;
   padding: 1rem 3rem;
 }
- /* INSPIRATION */
+ /* ::::::::::::: INSPIRATION ::::::::::::: */
 .inspiration{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  width: 70%;
+  width: 67%;
+  margin: 6rem auto 0 auto;
   justify-content:right;
   place-items: center;
 }
 video{
   height: auto;
   width: 100%;
+  padding: 0 2rem;
 }
 .inspiration article:nth-of-type(1){
   grid-column: 1 / 3;
 }
 .inspiration article:nth-of-type(2){
   grid-column: 1 / 3;
-  place-items: unset;
-  margin-top:8rem;
+  margin-top:6rem;
 }
 .inspiration article:nth-of-type(3){
   grid-column: 1/2;
@@ -200,14 +201,35 @@ video{
 }
 .inspiration article:nth-of-type(4){
   grid-column: 2/3;
-  background: red;
 }
-.inspiration img {
+.inspiration article:nth-of-type(6)  {
+ margin-bottom: 6rem;
+}
+.inspiration .left {
+  justify-self: start;
+}
+.inspiration .left h2 {
+  font-size: 2rem;
+  font-weight: 100;
+  color: #ebccc2;
+  padding: 0rem 0rem;
+}
+.inspiration .left h3 {
+  font-size: 1.4rem;
+  font-weight: 100;
+  color: #ebccc2;
+  padding: 1rem 0;
+}
+.inspiration .left p{
+  font-size: 1rem;
+  color: #867772;
+  padding: 1rem 0 5rem 0;
+}
+.inspiration img{
   width:100%;
   object-fit: cover;
   object-position: 50% 50%;
 }
-
 .inspiration h2 {
   font-size: 2rem;
   font-weight: 100;
@@ -233,6 +255,7 @@ video{
   border-radius: 2px;
   padding: 0.25rem 0.8rem;
 }
+/* ::::::::::::: SHOP ::::::::::::: */
 .shop{
   align-items: center;
 }
