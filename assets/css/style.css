@@ -113,8 +113,13 @@ h1{
   margin: 0 auto 0 25%;
   padding: 10% 0;
 }
-main img{
-  width: 100%;
+.fly{
+  text-align: center;
+  margin: 0 auto;
+}
+.fly img{
+  width: 90%;
+  
 }
 .content {
   display: grid;
